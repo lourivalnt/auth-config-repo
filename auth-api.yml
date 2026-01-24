@@ -1,8 +1,16 @@
-jwt:
-  access-expiration: 900000
-  refresh-expiration: 604800000
+spring:
+  application:
+    name: auth-api
 
 features:
   user-registration: true
   refresh-token-enabled: true
-  audit-log-enabled: true
+
+security:
+  jwt:
+    access-expiration: 900000
+    refresh-expiration: 604800000
+
+observability:
+  security-logs: true
+  metrics-enabled: true
