@@ -1,3 +1,10 @@
 features:
   user-registration: true
-  audit-log-enabled: false
+
+security:
+  jwt:
+    access-expiration: 900000
+
+observability:
+  security-logs: true
+  metrics-enabled: true
