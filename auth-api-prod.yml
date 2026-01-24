@@ -1,0 +1,3 @@
+features:
+  user-registration: false
+  audit-log-enabled: true
