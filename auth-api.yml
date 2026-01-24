@@ -1,0 +1,8 @@
+jwt:
+  access-expiration: 900000
+  refresh-expiration: 604800000
+
+features:
+  user-registration: true
+  refresh-token-enabled: true
+  audit-log-enabled: true
