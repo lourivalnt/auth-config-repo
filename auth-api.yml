@@ -1,3 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/authdb
+    username: authuser
+    password: authpass
+    driver-class-name: org.postgresql.Driver
+
 features:
   user-registration: true
   refresh-token-enabled: true
