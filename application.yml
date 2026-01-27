@@ -1,14 +1,4 @@
 test:
   mensagem: "Config Server funcionando 🎉"
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,prometheus
-
-management:
-  metrics:
-    tags:
-      application: ${spring.application.name}
 
 
