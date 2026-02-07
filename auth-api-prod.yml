@@ -1,18 +1,17 @@
+server:
+  port: 8081
+
 spring:
   datasource:
-    url: jdbc:postgresql://prod-db:5432/authdb
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://postgres:5432/authdb
+    username: authuser
+    password: authpass
 
-features:
-  user-registration: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
 
-security:
-  jwt:
-    secret: ${JWT_SECRET}
-    access-expiration: 600000
-    refresh-expiration: 259200000
-
-observability:
-  security-logs: true
-  metrics-enabled: true
+jwt:
+  secret: PROD_SECRET_KEY
+  expiration: 3600000
